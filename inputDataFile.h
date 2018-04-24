@@ -13,12 +13,12 @@ class input{
 private:
 
 /*
-структура хронящая данные
+структура с элементами данных 
 
 */struct data
 {
-	std::string dir;
-	map<std::string, std::string> KeyVal; 
+	std::string dir;// имя ветки
+	map<std::string, std::string> KeyVal; //ключ и значение ветки
 };
 
 std::vector<data> vector;

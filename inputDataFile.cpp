@@ -18,3 +18,11 @@ void input::pushDir(std::string dir){
 void input::pushKeyVal(std::string key, std::string val){
 
 }
+
+void input::findDir(std::string dir){
+
+}
+
+void input::deleteDir(std::string dir){
+	
+}

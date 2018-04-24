@@ -17,15 +17,20 @@ private:
 
 */struct data
 {
+	data(){std::cout<<"constructor\n";}
+	data(const data& d){std::cout<<"copu\n";}
+	~data(){std::cout<<"delete";}
 	std::string dir;// имя ветки
 	map<std::string, std::string> KeyVal; //ключ и значение ветки
 };
-
+data* bin;
 std::vector<data> vector;
 
 public:
 	input();
 	~input();
+	void pushDir(std::string dir);//добавление ветки
+	void pushKeyVal(std::string key, std::string val);//добавление ключа и значения 
 	void findDir(std::string dir);
 
 }

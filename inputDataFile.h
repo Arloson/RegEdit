@@ -26,10 +26,10 @@ private:
 data* bin;
 std::vector<data> vector;
 
-	void findDir(std::string dir);
 public:
 	input();
 	~input();
+	bool findDir(std::string dir);//поиск по ключу
 	void pushDir(std::string dir);//добавление ветки
 	void pushKeyVal(std::string key, std::string val);//добавление ключа и значения 
 	void deleteDir(std::string dir);

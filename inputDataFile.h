@@ -21,8 +21,8 @@ private:
 	data(const data& d){std::cout<<"copu\n";}
 	~data(){std::cout<<"delete";}
 	std::string dir;// имя ветки
-	std::multimap<std::string, std::string> KeyVal; //ключ и значение ветки
 };
+std::multimap< data, std::string > KeyVal; //ключ и значение ветки
 data* bin;
 std::vector<data> vector;
 

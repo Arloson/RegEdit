@@ -2,11 +2,7 @@
 #include <fstream>
 #include <string>
 
-struct test
-{
-	std::string dir;
-	
-};
+
 
 class input{
 
@@ -20,7 +16,7 @@ private:
 	data(){std::cout<<"constructor\n";}
 	data(const data& d){std::cout<<"copu\n";}
 	~data(){std::cout<<"delete";}
-	std::string dir;// имя ветки
+	std::map;// имя ветки
 };
 std::multimap< data, std::string > KeyVal; //ключ и значение ветки
 data* bin;

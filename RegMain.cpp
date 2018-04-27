@@ -13,19 +13,24 @@ void readFile(string name, vector<string> &v){
 	{
 		wcout<<L"Файл открыт"<<endl;
 		while(getline(ifile, dat)){
-			cout<<dat<<endl;
+			//cout<<dat<<endl;
 			v.push_back(dat);
 		}
 
-
 	}
+		wcout<<L"Готово\n";
 
 	ifile.close();
 
 }
 
 void writeNewReg(vector<string>& v){
-
+	ofstream outfile;
+	outfile.open("new.reg");
+	
+	for(auto it = v.begin();it != v.end(); ++it){
+		cout<<*it<<endl;
+	}
 }
 
 int main(int argc, char** argv){
@@ -35,8 +40,8 @@ int main(int argc, char** argv){
 	v.reserve(100);
 	wcout<<"запуск функции, добавление данных в вектор\n";
 	readFile("C:\\Users\\Sergey\\Desktop\\tt\\parsReg\\reg.reg", v);
-
-
+	cout<<"vector size() = "<<v.size();
+	writeNewReg(v);
 
 	return 0;
 }
